@@ -6,7 +6,7 @@ import Hello from "./Hello.js"
 import Lab5 from "./Lab5/index.js";
 import cors from "cors";
 import db from "./kambaz/database/index.js";
-import UserRoutes from "./kambaz/user/routes.js";
+import UserRoutes from "./kambaz/users/routes.js";
 import CourseRoutes from "./kambaz/courses/routes.js";
 import AssignmentsRoutes from "./kambaz/assignments/routes.js";
 import EnrollmentsRoutes from "./kambaz/enrollments/routes.js";
