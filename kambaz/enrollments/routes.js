@@ -3,16 +3,15 @@ import EnrollmentsDao from "./dao.js";
 export default function EnrollmentsRoutes(app, db) {
   const dao = EnrollmentsDao(db);
 
-  const enrollUserInCourse = (req, res) => {
+  const enrollUserInCourse = async (req, res) => {
     const { userId, courseId } = req.params;
-    const status = dao.enrollUserInCourse(userId, courseId);
-    res.sendStatus(status);
+    await dao.enrollUserInCourse(userId, courseId);
   };
 
-  const unenrollUserInCourse = (req, res) => {
+  const unenrollUserInCourse = async (req, res) => {
     const { userId, courseId } = req.params;
-    const status = dao.unenrollUserInCourse(userId, courseId);
-    res.sendStatus(status);
+    await dao.unenrollUserInCourse(userId, courseId);
+   
   };
 
   app.post("/api/users/:userId/courses/:courseId", enrollUserInCourse);
