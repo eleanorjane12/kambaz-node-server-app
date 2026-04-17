@@ -1,4 +1,4 @@
-import QuizzesDao from "./dao";
+import QuizzesDao from "./dao.js";
 
 export default function QuizRoutes(app) {
   const dao = QuizzesDao();
@@ -11,7 +11,7 @@ export default function QuizRoutes(app) {
 
   app.post("/api/courses/:cid/quizzes", async (req, res) => {
     const { cid } = req.params;
-    const quiz = await dao.createQuiz({ ...req.body, course: cid });
+    const quiz = await dao.createQuiz({ ...req.body, cid: cid });
     res.json(quiz);
   });
 

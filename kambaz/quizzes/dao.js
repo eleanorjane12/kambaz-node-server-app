@@ -3,7 +3,7 @@ import model from "./model.js";
 
 export default function QuizzesDao() {
   const findQuizzesForCourse = (courseId) =>
-    model.find({ course: courseId });
+    model.find({ cid: courseId });
 
   const createQuiz = (quiz) =>
     model.create({ ...quiz, _id: uuidv4() });

@@ -1,23 +1,25 @@
 export default [
-    {
-        "_id" : "123",
-        "name" : "Q1 - HTML",
-        "type" : "Graded Quiz",
-        "points" : 100,
-        "group" : "Quizzes",
-        "shuffle" : true,
-        "time" : "20 Minutes",
-        "multi_attempts" : true,
-        "attempts" : 1,
-        "show_answers" : __,
-        "access_code" : 123,
-        "one_q_at_once" : true,
-        "webcam" : true,
-        "lock qs" : false,
-        "due" : "1/10/2025",
-        "available_from" : "1/05/2025",
-        "available_until" : "1/15/2025",
-    },
+{
+  "_id": "quiz-1",
+  "title": "Batman Quiz",
+  "cid": "RS101",
+  "quizType": "Graded Quiz",
+  "points": 100,
+  "assignmentGroup": "Quizzes",
+  "shuffleAnswers": true,
+  "timeLimit": 20,
+  "multipleAttempts": false,
+  "howManyAttempts": 1,
+  "showCorrectAnswers": "After Due Date",
+  "accessCode": "",
+  "oneQuestionAtATime": true,
+  "webcamRequired": false,
+  "lockQuestionsAfterAnswering": false,
+  "dueDate": "2024-05-13T23:59:00.000Z",
+  "availableDate": "2024-05-06T00:00:00.000Z",
+  "untilDate": "2024-05-14T23:59:00.000Z",
+  "published": true
+ }
 ]
 
 /*
