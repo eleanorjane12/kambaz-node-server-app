@@ -36,11 +36,11 @@ if (process.env.SERVER_ENV !== "development") {
 }
 app.use(session(sessionOptions));
 app.use(express.json());
-UserRoutes(app, db);
-CourseRoutes(app, db);
-AssignmentsRoutes(app, db)
-EnrollmentsRoutes(app, db)
-ModulesRoutes(app, db)
+UserRoutes(app);
+CourseRoutes(app);
+AssignmentsRoutes(app)
+EnrollmentsRoutes(app)
+ModulesRoutes(app)
 Lab5(app)
 Hello(app)
 app.listen(process.env.PORT || 4000)
