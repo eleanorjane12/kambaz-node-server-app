@@ -16,8 +16,8 @@ const quizSchema = new mongoose.Schema({
   webcamRequired: { type: Boolean, default: false },
   lockQuestionsAfterAnswering: { type: Boolean, default: false },
   dueDate: Date,
-  availableDate: Date,
-  untilDate: Date,
+  availableDate: String,
+  untilDate: String,
   published: { type: Boolean, default: false },
 }, { collection: "quizzes" });
 export default quizSchema;
