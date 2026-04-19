@@ -3,6 +3,8 @@ import QuizzesDao from "./dao.js";
 export default function QuizRoutes(app) {
   const dao = QuizzesDao();
 
+
+
   app.get("/api/courses/:cid/quizzes", async (req, res) => {
     const { cid } = req.params;
     const quizzes = await dao.findQuizzesForCourse(cid);

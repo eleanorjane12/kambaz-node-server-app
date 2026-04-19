@@ -3,13 +3,13 @@ import QuestionsDao from "./dao.js";
 export default function QuestionRoutes(app) {
   const dao = QuestionsDao();
 
-  app.get("/api/courses/:cid/questions", async (req, res) => {
+  app.get("/api/quizzes/:qid/questions", async (req, res) => {
     const { cid } = req.params;
     const questions = await dao.findQuestionsForQuiz(cid);
     res.json(questions);
   });
 
-  app.post("/api/courses/:cid/questions", async (req, res) => {
+  app.post("/api/quizzes/:qid/questions", async (req, res) => {
     const { cid } = req.params;
     const question = await dao.createQuestion({ ...req.body, quizId: cid });
     res.json(question);
