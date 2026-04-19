@@ -16,9 +16,9 @@ export default [
   "oneQuestionAtATime": true,
   "webcamRequired": false,
   "lockQuestionsAfterAnswering": false,
-  "dueDate": "2024-05-13T23:59:00.000Z",
-  "availableDate": "2024-05-06T00:00:00.000Z",
-  "untilDate": "2024-05-14T23:59:00.000Z",
+  "dueDate": "2024-05-13",
+  "availableDate": "2024-05-06",
+  "untilDate": "2024-05-14",
   "published": true
  }
 ]
