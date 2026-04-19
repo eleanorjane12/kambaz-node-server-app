@@ -3,6 +3,7 @@ export default [
   "_id": "quiz-1",
   "title": "Batman Quiz",
   "cid": "RS101",
+  "description": "this is a quiz all about Batman",
   "quizType": "Graded Quiz",
   "points": 100,
   "assignmentGroup": "Quizzes",

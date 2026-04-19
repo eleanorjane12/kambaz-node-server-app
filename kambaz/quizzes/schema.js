@@ -3,6 +3,7 @@ const quizSchema = new mongoose.Schema({
   _id: String,
   title: String,
   cid: String,
+  description: { type: String, default: "this is a quiz" },
   quizType: { type: String, default: "Graded Quiz" },
   points: { type: Number, default: 0 },
   assignmentGroup: { type: String, default: "Quizzes" },
