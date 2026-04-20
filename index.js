@@ -40,14 +40,14 @@ if (process.env.SERVER_ENV !== "development") {
 app.use(session(sessionOptions));
 app.use(express.json());
 
-UserRoutes(app)
-CourseRoutes(app)
-AssignmentsRoutes(app)
-EnrollmentsRoutes(app)
-ModulesRoutes(app)
-QuizRoutes(app)
-QuestionRoutes(app)
-QuizAttemptRoutes(app)
+UserRoutes(app, db)
+CourseRoutes(app, db)
+AssignmentsRoutes(app, db)
+EnrollmentsRoutes(app, db)
+ModulesRoutes(app, db)
+QuizRoutes(app, db)
+QuestionRoutes(app, db)
+QuizAttemptRoutes(app, db)
 
 Lab5(app)
 Hello(app)

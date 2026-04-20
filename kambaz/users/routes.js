@@ -16,6 +16,7 @@ export default function UserRoutes(app) {
     res.json(status);
    };
 
+   
 
     const findAllUsers = async (req, res) => {
       const { role, name } = req.query;
@@ -95,8 +96,6 @@ export default function UserRoutes(app) {
 
   app.get("/api/users", findAllUsers);
   app.get("/api/users/:userId", findUserById);
-
-
   app.post("/api/users/signup", signup);
   app.post("/api/users/signin", signin);
   app.post("/api/users/signout", signout);
